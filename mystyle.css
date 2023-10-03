@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro {
+    position:fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate -50%, -50%;
+    color: #ffffff;
+}
+
+.logo {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+
+.logo.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+/* Navigation Bar + Hyperlink style and effects */
+.navbar {
+    text-align:end;
+}
+
+.navbar a:link{
+    text-decoration: none;
+}
+
+.navbar a {
+    transition: color .3s ease-in-out, box-shadow .8s ease-in-out;
+}
+
+.navbar a:hover {
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar a:visited {
+    color:black;
+}
+
+/* Resume columns (summary of skills) */
+.skillscolumn {
+    float: left;
+    width:33.33%;
+}
+
+.skills:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.resumebullets li{
+    padding-bottom:5%;
+    text-align:left;
+}
+
+.educationcolumn {
+    float: left;
+    width:50%;
+}
+
+.education:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.educationtext {
+    text-align:left; 
+    padding-left: 10%;
+}
